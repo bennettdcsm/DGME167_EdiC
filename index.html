@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edi Ajiatas Music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('images/IMG_1617.JPG') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: rgba(26, 31, 53, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b4a;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            opacity: 0;
+            animation: fadeInTagline 4s ease-in-out infinite;
+        }
+
+        @keyframes fadeInTagline {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #000;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff6b4a;
+        }
+
+        footer {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(26, 31, 53, 0.8);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                left: 5%;
+                text-align: center;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+       <nav class="navbar">
+        <a href="index.html" class="logo">Edi Ajiatas Music</a>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="music.html">Music</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <h1>Creating Timeless Moments Through Music</h1>
+        <a href="services.html" class="cta-button">View More</a>
+    </div>
+
+<footer>
+    <p>Edi Ajiatas Music © 2024</p>
+    <div class="social-links">
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@ediajiatas/featured" target="https://www.youtube.com/@ediajiatas/featured" title="YouTube">
+            <img src="images/icons/youtube.png" alt="YouTube">
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ediajiatas/" target="https://www.instagram.com/ediajiatas/" title="Instagram">
+            <img src="images/icons/instagram.png" alt="Instagram">
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@ediajiatasmusic?lang=en" target="https://www.tiktok.com/@ediajiatasmusic?lang=en" title="TikTok">
+            <img src="images/icons/tiktok.png" alt="TikTok">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
