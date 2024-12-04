@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edi Ajiatas Music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1f35;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%; /* Matches your uploaded code */
+            background-color: rgba(26, 31, 53, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b4a;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Ensures text and image are side-by-side */
+            padding: 7rem 5%; /* Adds extra padding to move content below the navbar */
+            min-height: 100vh;
+        }
+
+        .about-text {
+            max-width: 45%; /* Keeps the paragraph narrower for better readability */
+            text-align: left;
+            margin-left: 5%; /* Aligns with the logo and navigation */
+        }
+
+        .about-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff6b4a;
+        }
+
+        .about-text p {
+            line-height: 1.8;
+        }
+
+        .about-image {
+            width: 45%; /* Ensures the image occupies the remaining space */
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(26, 31, 53, 0.95);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text {
+                margin-left: 0;
+                max-width: 100%;
+            }
+
+            .about-image {
+                margin-top: 2rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+        <a href="index.html" class="logo">Edi Ajiatas Music</a>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="music.html">Music</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section id="about" class="about-section">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>
+                I grew up in Marin County, CA, spending 13 years in San Rafael and 7 years in Novato. My journey with music began when I was 15, sparked by a visit to a Christian church in Redwood City, now known as Iglesia de Dios Vida. 
+                The moment I stepped into the church, I was captivated by the music, despite not understanding what the songs meant. About a year later, my family and several friends started attending the church regularly, which eventually led to the creation of a church extension in San Rafael for our group.
+            </p>
+            <p>
+                When the church band asked who wanted to learn an instrument, I immediately volunteered to learn guitar. From there, my music journey took off. My teacher, Oscar Justo, along with the church’s piano player, Melvin Grande Jr., would drive an hour from Redwood City to Novato to teach me and my cousins. 
+                I now have over 10 years of experience playing guitar and 5 years playing bass in church and professional settings, including studios and live performances. Music has always been a central part of my life, and I’m passionate about creating and sharing it with others!
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="images/live2.jpg" alt="Edi Ajiatas playing guitar">
+        </div>
+    </section>
+
+   <footer>
+    <p>Edi Ajiatas Music © 2024</p>
+    <div class="social-links">
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@ediajiatas/featured" target="https://www.youtube.com/@ediajiatas/featured" title="YouTube">
+            <img src="images/icons/youtube.png" alt="YouTube">
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ediajiatas/" target="https://www.instagram.com/ediajiatas/" title="Instagram">
+            <img src="images/icons/instagram.png" alt="Instagram">
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@ediajiatasmusic?lang=en" target="https://www.tiktok.com/@ediajiatasmusic?lang=en" title="TikTok">
+            <img src="images/icons/tiktok.png" alt="TikTok">
+        </a>
+    </div>
+</footer>
+</body>
+</html>
