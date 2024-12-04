@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Edi Ajiatas Music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1f35;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%; /* Reduced padding to move navbar closer to top */
+            background-color: rgba(26, 31, 53, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b4a;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 5%; /* Reduced padding */
+            min-height: 50vh; /* Reduced height for closer content */
+            margin-top: 70px; /* Adjusted margin-top to account for fixed navbar */
+            text-align: center;
+        }
+
+        .hero-content {
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #000;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff6b4a;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 5%;
+            background-color: #232d45;
+            margin-top: 2rem;
+        }
+
+        .service {
+            width: 45%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #ff6b4a;
+        }
+
+        .service p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-image img {
+            width: 100%; /* Set width to 100% of the container */
+            height: auto; /* Allow height to adjust automatically */
+            max-width: 300px; /* Resized image width */
+            border-radius: 5px;
+            object-fit: contain; /* Ensures the entire image is visible */
+        }
+
+        footer {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(26, 31, 53, 0.95);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 60px; /* Adjusted for mobile */
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .services {
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 5%;
+            }
+
+            .service {
+                width: 80%;
+                margin-bottom: 2rem;
+            }
+
+            .service h2 {
+                font-size: 1.5rem;
+            }
+
+            .service-image img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Edi Ajiatas Music</a>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="music.html">Music</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>My Services</h1>
+        </div>
+    </section>
+
+    <section class="services">
+        <!-- Studio Recording Service -->
+        <div class="service">
+            <h2>Studio Recording</h2>
+            <p>
+                I offer professional guitar and bass recording services with over 10 years of experience. Whether you need rhythm, lead, or bass lines, I can provide high-quality, dynamic tracks to fit your project. I work across various genres and collaborate closely to ensure the right sound for your production. Let’s bring your music to life! Contact me for rates and availability!
+            </p>
+            <div class="service-image">
+                <img src="images/IMG_7324.jpg" alt="Image of Edi Studio Recording">
+            </div>
+        </div>
+
+        <!-- Live Performance Service -->
+        <div class="service">
+            <h2>Live Performance</h2>
+            <p>
+                Looking for a skilled guitarist or bassist for your live performance? With over 10 years of experience playing in church, studios, and live venues, I bring energy, precision, and professionalism to every gig. Whether it’s a worship service, concert, or special event, I’m ready to deliver a performance that connects with your audience. 
+                Contact me for rates and availability!
+            </p>
+            <div class="service-image">
+                <img src="images/live.JPG" alt="Live Performance">
+            </div>
+        </div>
+    </section>
+
+  <footer>
+    <p>Edi Ajiatas Music © 2024</p>
+    <div class="social-links">
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@ediajiatas/featured" target="https://www.youtube.com/@ediajiatas/featured" title="YouTube">
+            <img src="images/icons/youtube.png" alt="YouTube">
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ediajiatas/" target="https://www.instagram.com/ediajiatas/" title="Instagram">
+            <img src="images/icons/instagram.png" alt="Instagram">
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@ediajiatasmusic?lang=en" target="https://www.tiktok.com/@ediajiatasmusic?lang=en" title="TikTok">
+            <img src="images/icons/tiktok.png" alt="TikTok">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
